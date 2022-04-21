@@ -1,0 +1,354 @@
+/* Defult css Start */
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+.container{
+    width: 1240px;
+    margin: auto;
+}
+
+.fixclear::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+/* Defult css End */
+/* Menu Section Start*/
+nav {
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 12px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    z-index: 1;
+}
+nav img {
+	float: left;
+	width: 12%;
+    z-index: -1;
+}
+nav .menu {
+	float: left;
+	width: 64%;
+    
+    
+}
+nav .menu ul {
+	list-style: none;
+	padding: 0 88px;
+	margin-top: 7px;
+}
+nav .menu ul li {
+	display: inline-block;
+	position: relative;
+	margin-left: 47px;
+}
+nav .menu ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #4d4d4d;
+	padding: 32px 0px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+    transition: .4s;
+}
+nav .menu ul li a::after {
+	content: "";
+	background-color: red;
+	width: 0%;
+	height: 3px;
+	left: 50%;
+	bottom: -3px;
+	position: absolute;
+	transition: .4s;
+}
+nav .menu ul li a:hover:after{
+    width: 100%;
+    left: 0;
+}
+nav .menu ul li a:hover{
+    font-size: 15px;
+}
+.number {
+	float: left;
+	width: 15%;
+	line-height: 22px;
+	border: 1px solid rgb(121, 113, 113);
+	/* padding: 5px 10px; */
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+.number i{
+    color: #ff4010;
+}
+.number p {
+	color: #4d4d4d;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline;
+	padding: 10px;
+}
+.number::before {
+	content: "";
+	width: 0;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	background-color: rgb(0, 157, 255);
+	position: absolute;
+	border-radius: 89px 0px;
+	z-index: -1;
+	transition: .4s;
+}
+.number:hover:before{
+    width: 100%;
+    left: 0;
+   
+}
+.number p:hover{
+    color: #fff;
+}
+.fa-solid.fa-phone {
+	padding: 11px 10px;
+}
+.fa-solid.fa-phone:hover{
+    color: rgb(18, 255, 125);
+    cursor: pointer;
+}
+/* Menu Section End */
+/* Background Section Start */
+.banner{
+    background-image: url(./image/banner.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner h2{
+    color: #F2F2F2;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 32px;
+    font-family:  Helvetica, Arial, sans-serif;
+
+	padding-bottom: 10px;
+}
+.banner p {
+	color: #F2F2F2;
+	display: inline-block;
+	font-weight: 100;
+	font-size: 19.2px;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+}
+.banner h1 {
+	font-size: 85px;
+	color: #F2F2F2;
+	line-height: 100%;
+	font-family:  Helvetica, Arial, sans-serif;
+	margin-left: -5px;
+}
+.banner-heading {
+	width: 40%;
+	float: left;
+	padding: 181px 0;
+}
+.banner-heading a{
+    text-decoration: none;
+    background-color: #ff3300;
+    color: #fff;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 18px 37px;
+    border: 0 solid #bcbcbc;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: #ad2a0a;
+    opacity: .9;
+}
+.banner-heading img {
+	margin-top: 30px;
+}
+.image-2{
+    float: right;
+    width: 70%;
+    position: relative;
+}
+ 
+.image-2 img {
+	display: inline-block;
+	position: absolute;
+	top: -614px;
+	width: 100%;
+	left: 51px;
+}
+/*  Background Section End */
+.bg-home {
+	background-image: url(./image/bg.home.png);
+	background-repeat: repeat;
+	height: 800px;
+	box-sizing: border-box;
+	padding-top: 70px;
+}
+.planing {
+	float: left;
+	width: 43%;
+}
+.planing h1{
+    color: #4b4b4b;
+    font-size: 30px;
+    font-weight: 200;
+}
+.planing p {
+    line-height: 20px;
+    font-size: 18px;
+    color: #494d50;
+    word-spacing: 5px;
+    text-align: justify;
+}
+.left-img{
+    float: right;
+    width: 40%;
+    display: inline-block;
+} 
+.left-img img {
+	width: 628px;
+	margin-left: -142px;
+	margin-top: 50px;
+}
+.border-img {
+	border-top: 1px solid #e6e6e8;
+	border-bottom: 1px solid #e6e6e8;
+	color: #fff;
+	padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.border-img img{
+width: 20%;
+float: left; 
+
+}
+
+.app-dev {
+	padding-top: 50px;
+}
+.app-dev .planing-2 {
+	float: right;
+	width: 43%;
+	margin-top: 82px;
+    
+}
+.app-dev .planing-2 h1{
+    color: #4b4b4b;
+font-size: 30px;
+font-weight: 200;
+}
+.app-dev .planing-2 p {
+	line-height: 20px;
+	font-size: 18px;
+	color: #494d50;
+	word-spacing: 5px;
+	text-align: justify;
+}
+.app-dev img {
+	float: left;
+	width: 40%;
+	width: 628px;
+	margin-left: -227px;
+	margin-top: 124px;
+}
+.needs-dev.fixclear {
+	padding-bottom: 70px;
+}
+.left-img-2 img {
+	float: left;
+	width: 40%;
+	width: 628px;
+	margin-left: 16px;
+	margin-top: 124px;
+}
+/* app dev end */
+.need-dev {
+	text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 0px;
+
+  
+}
+.need-dev h1 {
+
+	
+	font-size: 33px;
+    color: #000;
+    font-weight: 100;
+    display: inline-block;
+}
+.need-dev .contact a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
+	background-color: #ff3300;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-transform: uppercase;
+    transition: .4s;
+    position: relative;
+    z-index: 1;
+}
+.need-dev .contact i{
+    color: #fff;
+}
+.contact {
+	display: inline-block;
+}
+.need-dev .contact a::after{
+    content: "";
+    width:0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+    transition: .4s;
+    z-index: -1;
+    border-radius: 5px;
+}
+.need-dev .contact a:hover::after{
+  
+    width: 100%;
+   
+   
+}
+.need-dev .contact a:hover{
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
